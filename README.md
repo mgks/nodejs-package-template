@@ -66,3 +66,7 @@ Because npm packages should be easy to ship, hard to break, and boring to mainta
 ## License
 
 MIT
+
+> **{ github.com/mgks }**
+> 
+> ![Website Badge](https://img.shields.io/badge/Visit-mgks.dev-blue?style=flat&link=https%3A%2F%2Fmgks.dev) ![Sponsor Badge](https://img.shields.io/badge/%20%20Become%20a%20Sponsor%20%20-red?style=flat&logo=github&link=https%3A%2F%2Fgithub.com%2Fsponsors%2Fmgks)
