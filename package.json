@@ -1,40 +1,49 @@
 {
   "name": "package-name",
-  "version": "0.0.0",
-  "description": "Description goes here.",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mgks/package-name.git"
-  },
-  "author": {
-    "name": "mgks",
-    "url": "https://mgks.dev"
-  },
-  "homepage": "https://github.com/mgks/package-name#readme",
-  "bugs": {
-    "url": "https://github.com/mgks/package-name/issues"
-  },
-  "funding": "https://github.com/sponsors/mgks",
+  "version": "0.1.0",
+  "description": "A short, honest description of what this package does.",
   "type": "module",
-  "exports": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "bin": {
-    "package-name": "./dist/cli.js"
+    "package-name": "dist/cli.js"
   },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
   "scripts": {
     "test": "node --import=tsx --test test/*.ts",
     "build": "tsup",
     "prepublishOnly": "npm run build && npm test",
     "lint": "xo"
   },
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
+  "keywords": [
+    "node",
+    "cli",
+    "npm",
+    "utility"
+  ],
+  "author": {
+    "name": "mgks",
+    "url": "https://mgks.dev"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgks/package-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mgks/package-name/issues"
+  },
+  "homepage": "https://github.com/mgks/package-name#readme",
+  "funding": "https://github.com/sponsors/mgks",
   "devDependencies": {
     "@types/node": "^20.0.0",
     "tsup": "^8.0.0",

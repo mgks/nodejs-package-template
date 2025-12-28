@@ -1,6 +1,6 @@
-# Node.js Package Template 📦
+# package-name (Node.js Package Template 📦)
 
-A practical template for building and publishing Node.js packages and CLIs to npm, with GitHub Actions, OIDC publishing, and sane defaults.
+Short description of the pain this package solves - A practical template for building and publishing Node.js packages and CLIs to npm, with GitHub Actions, OIDC publishing, and sane defaults.
 
   <a href="https://www.npmjs.com/package/package-name"><img src="https://img.shields.io/npm/v/package-name.svg?style=flat-square&color=007acc" alt="npm version"></a>
   <a href="https://bundlephobia.com/package/package-name"><img src="https://img.shields.io/bundlephobia/minzip/package-name?style=flat-square" alt="size"></a>
@@ -8,44 +8,30 @@ A practical template for building and publishing Node.js packages and CLIs to np
   <a href="https://github.com/mgks/package-name/blob/main/LICENSE"><img src="https://img.shields.io/github/license/mgks/package-name.svg?style=flat-square&color=blue" alt="license"></a>
   <a href="https://github.com/mgks/package-name/stargazers"><img src="https://img.shields.io/github/stars/mgks/package-name?style=flat-square&logo=github" alt="stars"></a>
 
-## Use this template
+**The Problem:** You currently do X manually or write ugly bash scripts.
+**The Solution:** This does it in one line.
 
-### 1. Create the repo
-- Click **Use this template** on GitHub.
-- Name it something sensible, for example `package-name`.
-- Clone it locally.
-
-### 2. Set package metadata
-Edit `package.json` and update the identity:
-
-### 3. Rename the CLI
-
-* Rename `bin/my-package.js` to your package name.
-* Update the `bin` field in `package.json`.
-* Adjust help text and examples inside the file.
-
-### 4. Write the code
-
-* Library logic lives in `src/`.
-* Keep `src/index.js` as the public API.
-* Avoid exporting internals, use `exports`.
-
-### 5. Test locally
+## Install
 
 ```bash
-npm install -g .
-package-name --help
+npm install package-name
 ```
 
-### 6. Publish
+## Usage
 
-* Push to GitHub.
-* Create a GitHub Release (tag `v0.1.0`).
-* GitHub Actions publishes to npm using OIDC.
+### CLI
 
-## Why this exists
+```bash
+npx package-name --flag
+```
 
-Because npm packages should be easy to ship, hard to break, and boring to maintain.
+### API
+
+```js
+import { functionName } from 'package-name';
+
+functionName('input');
+```
 
 ## License
 
